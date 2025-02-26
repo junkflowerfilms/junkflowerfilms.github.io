@@ -1,3 +1,13 @@
+@font-face {
+    font-family: NewSeasonsReg;
+    src: url(fonts/Fontspring-theseasons-reg.otf);
+  }
+
+@font-face {
+    font-family: NewSeasonsBold;
+    src: url(fonts/Fontspring-theseasons-bold.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,15 +15,6 @@ body {
 
 .container {
     display: flex;
-}
-
-.sidebar {
-    width: 33vw;
-    height: 100vh;
-    background-color: #136a13;
-    color: #fff;
-    box-sizing: border-box;
-    position: fixed;
 }
 
 .content {
@@ -24,16 +25,49 @@ body {
     text-align: justify;
 }
 
+.sidebar {
+    width: 33vw;
+    height: 100vh;
+    background-color: #98c4df;
+    box-sizing: border-box;
+    position: fixed;
+    
+}
+
+.homepagelogo {
+    margin-left: -30px;
+}
+
 .sidebar a {
     display: block;
-    color: #fff;
+    color: black;
     text-decoration: none;
-    padding: 10px;
-    margin-bottom: 10px;
-    transition: background-color 0.3s;
+    padding: 1px;
+    margin-left: 25px;
+    font-family: NewSeasonsReg;
+    font-weight: 700;
+}
+
+.projectlinks {
+    margin-bottom: 20px;
+}
+
+.briefaboutpara {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 3px;
+    margin-left: 25px;
+    padding-right: 5vw;
+    margin-bottom: 20px;
+    font-family: NewSeasonsReg;
+}
+
+.contactuslinks {
+    margin-bottom: 50px;
 }
 
 /* Change background color on hover */
 .sidebar a:hover {
-    background-color: #2980b9;
+    color: #98ab97;
 }
