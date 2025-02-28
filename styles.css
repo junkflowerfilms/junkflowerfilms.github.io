@@ -1,12 +1,4 @@
-@font-face {
-    font-family: NewSeasonsReg;
-    src: url(fonts/Fontspring-theseasons-reg.otf);
-  }
-
-@font-face {
-    font-family: NewSeasonsBold;
-    src: url(fonts/Fontspring-theseasons-bold.otf);
-}
+@import url(https://db.onlinewebfonts.com/c/74c3c29282b604a9eed88ac6ede61463?family=ApercuPro-Regular);
 
 body {
     margin: 0;
@@ -18,20 +10,32 @@ body {
 }
 
 .content {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
     margin-left: 33vw;
-    text-align: justify;
+    background-color: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.Romontio {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 .sidebar {
     width: 33vw;
     height: 100vh;
-    background-color: #98c4df;
+    background-color: black;
     box-sizing: border-box;
     position: fixed;
-    
+
 }
 
 .homepagelogo {
@@ -40,12 +44,12 @@ body {
 
 .sidebar a {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 1px;
     margin-left: 25px;
-    font-family: NewSeasonsReg;
-    font-weight: 700;
+    font-family: "ApercuPro-Regular";
+    font-weight: 100;
 }
 
 .projectlinks {
@@ -54,13 +58,13 @@ body {
 
 .briefaboutpara {
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 3px;
     margin-left: 25px;
     padding-right: 5vw;
     margin-bottom: 20px;
-    font-family: NewSeasonsReg;
+    font-family: "ApercuPro-Regular";
 }
 
 .contactuslinks {
