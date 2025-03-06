@@ -116,7 +116,7 @@ img {
     color: #5b879a;
 }
 
-.copyright_claim {
+/* .copyright_claim {
     color: #5b879a;
     font-family: 'Glacial Indifference', sans-serif;
     font-size: 16px;
@@ -124,7 +124,7 @@ img {
     text-align: center;
     height: 50px;
     float: inline-end;
-}
+} */
 
 /* GENERAL PROJECT LAYOUT */
 
@@ -170,13 +170,13 @@ img {
     min-height: 100vh;
     overflow-y: auto;
     margin-bottom: 20px;
-    float: inline-end;
 }
-
 
 /* PALOMA WOOL */
 .palomawool_container {
     height: 100vh;
+    min-height: 100vh;
+    margin-bottom: 400px;
 }
 
 .palomawool_images {
@@ -185,6 +185,112 @@ img {
     height: 100vh;
     min-height: 100vh;
     overflow-y: auto;
+    overflow-x: visible;
     margin-bottom: 20px;
-    float: inline-end;
+}
+
+
+/* CONVERSATIONS ON SOLITUDE */
+.cos_container {
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.cos_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* Fujifilm */
+
+.fujifilm_container {
+    height: 100vh;
+}
+
+.fujifilm_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* TO DROWN A FLAME */
+
+.todrownaflame_container {
+    height: 100vh;
+}
+
+.todrownaflame_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* MANJHA */
+
+.manjha_container {
+    height: 100vh;
+}
+
+.manjha_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* A TALE OF WILTING FLOWERS */
+
+.atowf_container {
+    height: 100vh;
+}
+
+.atowf_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* A GIRL OF SUCH MANNER */
+
+.agirlofsuchmanner_container {
+    height: 100vh;
+}
+
+.agirlofsuchmanner_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* DEVI (WITHIN US ALL) */
+
+.devi_container {
+    height: 100vh;
+}
+
+.devi_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
 }
