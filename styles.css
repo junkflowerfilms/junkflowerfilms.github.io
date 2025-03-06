@@ -126,7 +126,11 @@ img {
     float: inline-end;
 } */
 
-/* GENERAL PROJECT LAYOUT */
+.about_image {
+    overflow: auto;
+}
+
+/* --------------- GENERAL PROJECT LAYOUT -----------------*/
 
 .project_information {
     color: #5b879a;
@@ -175,7 +179,6 @@ img {
 /* PALOMA WOOL */
 .palomawool_container {
     height: 100vh;
-    min-height: 100vh;
     margin-bottom: 400px;
 }
 
