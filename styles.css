@@ -116,3 +116,57 @@ img {
     color: #5b879a;
 }
 
+.copyright_claim {
+    color: #5b879a;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    height: 50px;
+    float: inline-end;
+}
+
+/* ROMONTIO */
+.romontio_container {
+    height: 100vh;
+}
+
+.romontio_information {
+    color: #5b879a;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.romontio_namedate {
+    float: left;
+}
+
+.romontio_servicecast {
+    float: right;
+}
+
+
+.romontio_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    float: inline-end;
+}
+
+.romontio_row {
+    display: flex;
+}
+
+.romontio_verticalgroup {
+    flex: 50%;
+    padding: 2px;
+}
+
