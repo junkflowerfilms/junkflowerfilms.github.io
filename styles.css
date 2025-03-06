@@ -126,12 +126,9 @@ img {
     float: inline-end;
 }
 
-/* ROMONTIO */
-.romontio_container {
-    height: 100vh;
-}
+/* GENERAL PROJECT LAYOUT */
 
-.romontio_information {
+.project_information {
     color: #5b879a;
     font-family: 'Glacial Indifference', sans-serif;
     font-size: 17px;
@@ -142,14 +139,29 @@ img {
     width: 100%;
 }
 
-.romontio_namedate {
+.project_namedate {
     float: left;
 }
 
-.romontio_servicecast {
+.project_servicecast {
     float: right;
 }
 
+.row {
+    display: flex;
+}
+
+.verticalgroup {
+    flex: 50%;
+    padding: 2px;
+}
+
+
+/* ROMONTIO */
+
+.romontio_container {
+    height: 100vh;
+}
 
 .romontio_images {
     flex-grow: 1;
@@ -161,12 +173,18 @@ img {
     float: inline-end;
 }
 
-.romontio_row {
-    display: flex;
+
+/* PALOMA WOOL */
+.palomawool_container {
+    height: 100vh;
 }
 
-.romontio_verticalgroup {
-    flex: 50%;
-    padding: 2px;
+.palomawool_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    float: inline-end;
 }
-
