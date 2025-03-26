@@ -82,6 +82,10 @@ img {
     flex-grow: 1;
     height: 100%;
     line-height: 30px;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .right {
@@ -128,6 +132,52 @@ img {
 
 .about_image {
     overflow: auto;
+}
+
+/* --------------- CONTACT US LAYOUT -----------------*/
+.contact_body {
+    background-color: #e5f2f0;
+}
+
+.contact_container {
+    font-family: 'Glacial Indifference', sans-serif;
+    color: #5b879a;
+    width: 100%;
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contact_us_intro {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact_header {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.contact_motivation {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact_information {
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    align-items: center;
+}
+
+.contact_specific {
+    margin-left: 35px;
+    margin-top: 0px;
 }
 
 /* --------------- GENERAL PROJECT LAYOUT -----------------*/
