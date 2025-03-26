@@ -228,7 +228,7 @@ img {
     }
 
     .project_information {
-        padding-top: 8px;
+        padding-top: 5px;
         padding-left: 7px;
         padding-right: 7px;
     }
@@ -264,6 +264,8 @@ img {
 .contact_motivation {
     font-size: 20px;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .contact_information {
@@ -315,14 +317,14 @@ img {
 /* ROMONTIO */
 
 .romontio_container {
-    height: 100vh;
+    height: 100dvh;
 }
 
 .romontio_images {
     flex-grow: 1;
     background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
     overflow-y: auto;
     margin-bottom: 20px;
 }
