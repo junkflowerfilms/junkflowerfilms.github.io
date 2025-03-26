@@ -169,7 +169,7 @@ img {
 
     /* Button styling */
     .menu-button {
-        background: none;
+        background-color: #F7F7F7;
         border: none;
         font-size: 34px;
         cursor: pointer;
@@ -185,7 +185,7 @@ img {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: white;
+        background-color: #F7F7F7;
         z-index: 999;
         flex-direction: column;
         justify-content: center;
@@ -272,7 +272,7 @@ img {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 45%;
+    width: 48%;
     align-items: center;
 }
 
