@@ -4,19 +4,38 @@
 <head>
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+	<script src="menu.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="images/JF_SQUARE_BLUE.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:image" content="images/JF_SQUARE_BLUE.png" name="image">
 	<title>
 		Junk Flower Films
 	</title>
-	
 </head>
+
 <body>
+	<!-- Mobile Header -->
+	<div class="mobile-header">
+		<a class="logo" href="index.html" target="_parent"><img src="images/JF_mobilelogo.png" width="150px"></a>
+		<button class="menu-button">☰</button>
+	</div>
+
+	<!-- Fullscreen Dropdown Menu -->
+	<div class="dropdown-menu">
+		<a href="index.html" target="_parent">HOME.</a>
+		<a href="about.html" target="mainContent">ABOUT.</a>
+		<a href="services.html" target="mainContent">SERVICES.</a>
+		<a href="contact.html" target="mainContent">CONTACT.</a>
+		<a href="https://www.instagram.com/junkflowerfilms/" target="_blank">INSTAGRAM.</a>
+	</div>
+
+
+    <!-- Main Container with Sidebar and Content -->
     <div class="maincontainer">
         <iframe src="left_sidebar.html" name="leftSidebar" id="leftSidebar"></iframe>
         <iframe src="home.html" name="mainContent" id="mainContent"></iframe>
         <iframe src="right_sidebar.html" name="rightSidebar" id="rightSidebar"></iframe>
     </div>
 </body>
+</html>
 </html>

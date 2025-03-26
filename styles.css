@@ -16,6 +16,15 @@ html, body {
     overflow: hidden;
 }
 
+/* Hide mobile header by default */
+.mobile-header {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
 .maincontainer {
     display: flex;
     width: 100vw;
@@ -66,12 +75,15 @@ img {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 550px;
     justify-content: space-between; /* Evenly distribute space */
 }
 
 .left .homepagelogo {
     margin-bottom: 20px;
-    align-self: flex-start;
+    align-self: center;
+    position: relative;
+    z-index: 10;
 }
 
 .left .projectlinks {
@@ -83,6 +95,7 @@ img {
     height: 100%;
     line-height: 30px;
     top: 50%;
+    padding-left: 20px;
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -133,6 +146,94 @@ img {
 .about_image {
     overflow: auto;
 }
+
+
+/* ------------------ MOBILE VIEW ------------------- */
+
+/* Apply styles only for screens smaller than 768px (iPhone-sized) */
+@media only screen and (max-width: 1000px) {
+    /* Show the mobile header */
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F7F7;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    /* Button styling */
+    .menu-button {
+        background: none;
+        border: none;
+        font-size: 34px;
+        cursor: pointer;
+        padding: 10px;
+        color: #5b879a;
+    }
+
+    /* Full-screen dropdown menu - Hidden by default */
+    .dropdown-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Show dropdown menu when active */
+    .dropdown-menu.show {
+        display: flex;
+    }
+
+    .dropdown-menu a {
+        font-size: 24px;
+        font-family: 'Glacial Indifference', sans-serif;
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #5b879a;
+        color: white;
+    }
+
+    /* Hide sidebars in mobile view */
+    #leftSidebar, #rightSidebar {
+        display: none;
+    }
+
+    /* Push main content down */
+    #mainContent {
+        width: 100%;
+        height: calc(100vh - 115px); /* Adjust height */
+        position: absolute;
+        top: 115px; /* Same height as header */
+        left: 0;
+    }
+
+    .project_information {
+        padding-top: 8px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
 
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
@@ -185,7 +286,7 @@ img {
 .project_information {
     color: #5b879a;
     font-family: 'Glacial Indifference', sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 30px;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -245,8 +346,7 @@ img {
 
 /* CONVERSATIONS ON SOLITUDE */
 .cos_container {
-    height: 100vh;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .cos_images {
@@ -261,7 +361,7 @@ img {
 /* Fujifilm */
 
 .fujifilm_container {
-    height: 100vh;
+    height: 100%;
 }
 
 .fujifilm_images {
