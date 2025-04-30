@@ -148,8 +148,8 @@ img {
 
 .about_image {
     flex: 1;
-    overflow-y: auto;
     position: fixed;
+    overflow-y: visible;
 }
 
 /* link colors */
