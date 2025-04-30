@@ -25,3 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// view cast list on click
+$('#cast_list').click( function() { $('#dropdown_paragraph').show(); });
