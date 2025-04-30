@@ -242,6 +242,7 @@ img {
         position: absolute;
         top: 115px; /* Same height as header */
         left: 0;
+        padding-bottom: 120px;
     }
 
     .project_information {
@@ -376,63 +377,40 @@ img {
 
 /* ROMONTIO */
 
-.romontio_container {
+.photo_images_container {
     height: 100dvh;
 }
 
-.romontio_images {
+.project_images {
     flex-grow: 1;
     background: #f7f7f7;
     height: 100dvh;
     max-height: 100dvh;
     overflow-y: auto;
-    margin-bottom: 20px;
+    padding-bottom: 150px;
 }
 
-/* PALOMA WOOL */
-.palomawool_container {
-    height: 100vh;
-    margin-bottom: 400px;
+@media only screen and (max-width: 780px) {
+    .project_images {
+        padding-bottom: 250px;
+    }
 }
 
-.palomawool_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    overflow-x: visible;
-    margin-bottom: 20px;
-}
-
-
-/* CONVERSATIONS ON SOLITUDE */
-.cos_container {
-    height: 100%;
-}
-
-.cos_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
 
 /* Fujifilm */
 
 .fujifilm_container {
-    height: 100%;
+    height: 100vh;
+    
 }
 
 .fujifilm_images {
     flex-grow: 1;
     background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
+    width: 100%;
     overflow-y: auto;
-    margin-bottom: 20px;
 }
 
 /* TO DROWN A FLAME */
@@ -448,64 +426,15 @@ img {
     min-height: 100vh;
     overflow-y: auto;
     margin-bottom: 20px;
+    padding-bottom: 150px;
 }
 
-/* MANJHA */
+@media only screen and (max-width: 780px) {
+    .fujifilm_images {
+        padding-bottom: 250px;
+    }
 
-.manjha_container {
-    height: 100vh;
-}
-
-.manjha_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
-
-/* A TALE OF WILTING FLOWERS */
-
-.atowf_container {
-    height: 100vh;
-}
-
-.atowf_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
-
-/* A GIRL OF SUCH MANNER */
-
-.agirlofsuchmanner_container {
-    height: 100vh;
-}
-
-.agirlofsuchmanner_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    margin-bottom: 20px;
-}
-
-/* DEVI (WITHIN US ALL) */
-
-.devi_container {
-    height: 100vh;
-}
-
-.devi_images {
-    flex-grow: 1;
-    background: #f7f7f7;
-    height: 100vh;
-    min-height: 100vh;
-    overflow-y: auto;
-    margin-bottom: 20px;
+    .todrownaflame_images {
+        padding-bottom: 250px;
+    }
 }
