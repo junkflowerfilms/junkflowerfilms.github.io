@@ -306,6 +306,10 @@ img {
     margin-top: 0px;
 }
 
+.contact_specific > a:link {
+    color: #33596a;
+}
+
 /* --------------- GENERAL PROJECT LAYOUT -----------------*/
 .project_information {
     color: #5b879a;
