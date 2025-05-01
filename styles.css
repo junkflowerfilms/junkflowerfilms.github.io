@@ -242,13 +242,18 @@ img {
         position: absolute;
         top: 115px; /* Same height as header */
         left: 0;
-        padding-bottom: 120px;
     }
 
     .project_information {
         padding-top: 5px;
         padding-left: 7px;
         padding-right: 7px;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    #mainContent {
+        padding-bottom: 120px;
     }
 }
 
@@ -387,13 +392,7 @@ img {
     height: 100dvh;
     max-height: 100dvh;
     overflow-y: auto;
-    padding-bottom: 150px;
-}
-
-@media only screen and (max-width: 780px) {
-    .project_images {
-        padding-bottom: 150px;
-    }
+    padding-bottom: 130px;
 }
 
 
@@ -401,7 +400,6 @@ img {
 
 .fujifilm_container {
     height: 100vh;
-    
 }
 
 .fujifilm_images {
@@ -411,6 +409,12 @@ img {
     max-height: 100dvh;
     width: 100%;
     overflow-y: auto;
+}
+
+@media only screen and (max-width: 770px) {
+    .fujifilm_images {
+        padding-bottom: 120px;
+    }
 }
 
 /* TO DROWN A FLAME */
@@ -426,15 +430,5 @@ img {
     min-height: 100vh;
     overflow-y: auto;
     margin-bottom: 20px;
-    padding-bottom: 150px;
-}
-
-@media only screen and (max-width: 780px) {
-    .fujifilm_images {
-        padding-bottom: 150px;
-    }
-
-    .todrownaflame_images {
-        padding-bottom: 150px;
-    }
+    padding-bottom: 130px;
 }
