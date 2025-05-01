@@ -310,9 +310,9 @@ img {
     /* Push main content down */
     #mainContent {
         width: 100%;
-        height: calc(100vh - 115px); /* Adjust height */
+        height: calc(100vh - 115px);
         position: absolute;
-        top: 115px; /* Same height as header */
+        top: 115px; 
         left: 0;
     }
 
@@ -326,7 +326,11 @@ img {
 /* adding padding to bottom of screen if on a phone (since there is a bar across the bottom) */
 @media only screen and (max-width: 770px) {
     #mainContent {
-        padding-bottom: 120px;
+        padding-bottom: 110px;
+    }
+
+    #mainContent > .contact_body{
+        padding-bottom: 10px;
     }
 }
 
@@ -486,12 +490,6 @@ img {
     overflow-y: auto;
 }
 
-@media only screen and (max-width: 770px) {
-    .fujifilm_images {
-        padding-bottom: 120px;
-    }
-}
-
 /* TO DROWN A FLAME */
 
 .todrownaflame_container {
@@ -506,4 +504,18 @@ img {
     overflow-y: auto;
     margin-bottom: 20px;
     padding-bottom: 130px;
+}
+
+@media only screen and (max-width: 770px) {
+    .fujifilm_images {
+        padding-bottom: 110px;
+    }
+    
+    .project_images {
+        padding-bottom: 110px;
+    }
+
+    .todrownaflame_images {
+        padding-bottom: 110px;
+    }
 }
