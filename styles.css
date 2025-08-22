@@ -385,7 +385,7 @@ hr {
 
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
-    background-color: #e5f2f0;
+    background-color: #c1d9e67b;
 }
 
 .contact_container {
@@ -405,12 +405,12 @@ hr {
 }
 
 .contact_header {
-    font-size: 50px;
+    font-size: 55px;
     margin-bottom: 15px;
 }
 
 .contact_motivation {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -418,7 +418,7 @@ hr {
 
 .contact_information {
     display: flex;
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
