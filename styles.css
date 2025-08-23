@@ -303,6 +303,17 @@ hr {
     border-color: #344e54;
     border-width: 1px;
 }
+
+@media only screen and (max-width: 770px) {
+    .press_header h1 {
+        font-size: 40px;
+    }
+
+    .press_info {
+        font-size: 16px;
+    }
+}
+
 /* link colors */
 
 .project_namedate > a:link {
@@ -411,6 +422,94 @@ hr {
     #mainContent > .contact_body{
         padding-bottom: 10px;
     }
+}
+
+/* --------------- SERVICE LAYOUT --------------------*/
+
+.service_type {
+    float: right;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #344e54;
+    padding-right: 30px;
+    padding-top: 50px;
+}
+
+#service_container {
+    display:flex; 
+    flex-direction: column; 
+    width: 100%; 
+}
+
+.service_process {
+    float: right;
+    padding-top: 175px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: TheSeasons;
+    color: #344e54;
+    font-size: 18px;
+}
+
+.service_divider {
+    float: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.service_details {
+    display:flex; 
+    flex-direction: row; 
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 17px;
+    color: #344e54;
+    float: right;
+    padding-bottom: 200px;
+}
+
+.development {
+    text-align: left;
+    margin-right: 45px;
+}
+
+.production {
+    text-align: center;
+    margin-right: 45px;
+}
+
+.postproduction {
+    text-align: right;
+}
+
+.service_info {
+    color: #344e54;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 25px;
+}
+
+.ourservices {
+    padding-top: 119px;
+    float: left;
+    font-family: TheSeasons;
+    font-size: 60px;
+}
+
+.ourservices br {
+    font-size: 14px;
+}
+
+.moreservice {
+    font-size: 0;
+    float: right;
+    text-align: right;
+    font-size: 15px;
+    padding-right: 16px;
+    width: 340px;
 }
 
 
