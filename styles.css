@@ -163,7 +163,7 @@ img {
 /* ----------------- ABOUT SECTION ------------------ */
 
 .about_image {
-    padding-top: 35px;
+    padding-top: 30px;
     flex-grow: 1;
     background: #f7f7f7;
     display: block;
@@ -174,11 +174,11 @@ img {
 .about_intro {
     color: #344e54;
     line-height: 30px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     display: inline-block;
     width: 100%;
-    padding-right: 30px;
+    padding-right: 25px;
     padding-left: 25px;
 }
 
@@ -197,19 +197,19 @@ img {
     float: right;
     text-align: right;
     font-size: 34px;
-    padding-right: 16px;
+    padding-right: 13px;
     font-family: Gallient;
 }
 
 .about_intro {
-    padding-top: 30px;
+    padding-top: 26px;
     padding-left: 25px;
     padding-right: 25px;
     color: #344e54;
 }
 
 .about_info {
-    padding-top: 30px;
+    padding-top: 24px;
     padding-left: 25px;
     padding-right: 25px;
     color: #344e54;
@@ -224,6 +224,14 @@ img {
 
     .names  {
         font-size: 25px; 
+    }
+
+    .about_intro {
+        padding-top: 15px;
+    }
+
+    .about_info {
+        padding-top: 10px;
     }
 }
 
@@ -378,7 +386,7 @@ hr {
     }
 
     .dropdown-menu a {
-        font-size: 24px;
+        font-size: 21px;
         font-family: 'Glacial Indifference', sans-serif;
         text-decoration: none;
         color: black;
