@@ -720,25 +720,6 @@ hr {
   }
 
 
-    #service_container {
-        display: none;
-    }
-
-    #service_containermobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-
-    .service_process {
-        flex-direction: column;
-    }
-
-    .service_details {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
     background-color: #c1d9e67b;
