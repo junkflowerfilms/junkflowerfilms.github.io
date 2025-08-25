@@ -434,92 +434,310 @@ hr {
 
 /* --------------- SERVICE LAYOUT --------------------*/
 
-.service_type {
-    float: right;
+.services_body {
     font-family: 'Glacial Indifference', sans-serif;
+    color: #344e54;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* everything aligns to the right */
+  }
+  
+  /* ----------------- Service Type (Top Nav) ------------------- */
+  
+  .service_type {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-bottom: 150px;
     font-size: 18px;
     font-weight: 600;
-    color: #344e54;
-    padding-right: 30px;
-    padding-top: 50px;
-}
+  }
+  
+  .service_typemobile { display: none; }
+  
+  /* ----------------- Service Container ------------------- */
+  
+  #service_container {
+    width: 75%;
+    margin-right: 30px;
+    margin-top: 110px;
+    /* positions (as % across the 75%-wide container) */
+    --p1: 0%;   /* Development */
+    --p2: 40%;  /* Production */
+    --p3: 80%;  /* Post Production  */
+  }
 
-#service_container {
-    display:flex; 
-    flex-direction: column; 
-    width: 100%; 
-}
-
-.service_process {
-    float: right;
-    padding-top: 175px;
-    padding-left: 70px;
-    padding-right: 70px;
-    font-family: TheSeasons;
-    color: #344e54;
-    font-size: 18px;
-}
-
-.service_divider {
-    float: right;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.service_details {
-    display:flex; 
-    flex-direction: row; 
-    font-family: 'Glacial Indifference', sans-serif;
-    font-size: 17px;
-    color: #344e54;
-    float: right;
-    padding-bottom: 200px;
-}
-
-.development {
+  .development {
     text-align: left;
-    margin-right: 45px;
-}
+  }
 
-.production {
+  .production {
     text-align: center;
-    margin-right: 45px;
-}
+  }
 
-.postproduction {
+  .postproduction {
     text-align: right;
-}
+  }
+  
+  /* Titles ABOVE the line, centered on each dot */
+  .service_process {
+    position: relative;
+    min-height: 28px;
+    font-family: TheSeasons, serif;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
 
-.service_info {
-    color: #344e54;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    display: inline-block;
+  .service_process > div {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .service_process > div:nth-child(1) { left: var(--p1); text-align: left; }
+  .service_process > div:nth-child(2) { left: var(--p2); }
+  .service_process > div:nth-child(3) { left: var(--p3); text-align: right;}
+  
+  /* Line + three dots */
+  .service_divider {
+    position: relative;
+    height: 40px;
+    margin: 4px 0;
+    background:
+      radial-gradient(circle, #344e54 0 8px, transparent 8px) var(--p1) 50% / 16px 16px no-repeat,
+      radial-gradient(circle, #344e54 0 8px, transparent 8px) var(--p2) 50% / 16px 16px no-repeat,
+      radial-gradient(circle, #344e54 0 8px, transparent 8px) var(--p3) 50% / 16px 16px no-repeat,
+      linear-gradient(#344e54, #344e54);
+    background-size:
+      16px 16px,
+      16px 16px,
+      16px 16px,
+      100% 2px;            /* the line */
+    background-position:
+      var(--p1) 50%,
+      var(--p2) 50%,
+      var(--p3) 50%,
+      0 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .service_divider img { 
+    display: none; 
+}
+  
+  /* Details BELOW the line, centered on each dot */
+  .service_details {
+    position: relative;
+    min-height: 110px;     
+    margin-top: 12px;
+    font-size: 16px;
+  }
+  .service_details > div {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    max-width: 260px;
+    z-index: 2;
+    line-height: 27px;
+  }
+  .service_details > div:nth-child(1) { left: var(--p1); }
+  .service_details > div:nth-child(2) { left: var(--p2); }
+  .service_details > div:nth-child(3) { left: var(--p3); }
+  
+  /* ----------------- Service Info (Bottom) ------------------- */
+  
+  .service_info {
     width: 100%;
-    padding-right: 30px;
-    padding-left: 25px;
-}
-
-.ourservices {
-    padding-top: 119px;
-    float: left;
-    font-family: TheSeasons;
-    font-size: 60px;
-}
-
-.ourservices br {
-    font-size: 14px;
-}
-
-.moreservice {
-    font-size: 0;
-    float: right;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .ourservices {
+    font-family: TheSeasons, serif;
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .moreservice {
+    max-width: 340px;
     font-size: 15px;
-    padding-right: 16px;
-    width: 340px;
-}
+    text-align: right;
+  }
+  .moreservice p { margin: 0; }
+  
+  /* ----------------- Hide Mobile Versions ------------------- */
+  
+  #service_containermobile,
+  .service_info_mobile { display: none; }
+  
+  /* ---------------- MOBILE LAYOUT ---------------- */
+  @media (max-width: 900px) {
+    .service_type,
+    #service_container,
+    .service_info {
+      display: none;
+    }
+  
+    .service_typemobile {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    #service_containermobile {
+      display: block;
+      width: 75%;
+      margin-left: 0;
+      margin-right: 150px;
+      margin-top: 30px;
+      position: relative;
+    }
+  
+    .timeline-vertical {
+      --circle-size: 16px;
+      --circle-border: 4px;
+      --rail: 2px;
+      --mid-col: calc(var(--circle-size) + 4 * var(--circle-border));
+  
+      display: grid;
+      grid-template-columns: 1fr var(--mid-col) 1.6fr;
+      grid-auto-rows: 1fr;      
+      column-gap: 12px;
+      align-items: center;
+      position: relative;
+      min-height: calc(100vh - 220px);
+      padding: 16px 0;
+    }
+  
+    .timeline-vertical::before {
+        content: "";
+        position: absolute;
+        top: 18%; /* adjust starting position */
+        bottom: -100%;
+        left: 4%;      /* adjust line position */            
+        transform: translateX(-50%); 
+        grid-column: 2;             
+        width: var(--rail);
+        background: #344e54;
+        z-index: 1;
+    }
+  
+    .step-vertical {
+      display: contents; 
+    }
+  
+    .step-vertical .process { /* development, production, post p*/
+      grid-column: 1;
+      justify-self: end;
+      text-align: right;
+      padding-right: 15px;
+      font-family: TheSeasons, serif;
+      font-size: 16px;
+      align-self: center;
+      margin-left: 35px;
+    }
+  
+    .step-vertical .circle {
+      grid-column: 2;
+      justify-self: center;
+      align-self: center;
+      width: var(--circle-size);
+      height: var(--circle-size);
+      background: #344e54;
+      border: var(--circle-border) solid #344e54;
+      border-radius: 50%;
+      z-index: 2; /* above the line */
+    }
+  
+    .step-vertical .details {
+      grid-column: 3;
+      justify-self: start;
+      text-align: left;
+      font-size: 14px;
+      align-self: center;
+      max-width: 100%;
+      margin-left: 20px;
+    }
+  
+    .service_info_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      text-align: right;
+    }
+  
+    .service_info_mobile .moreservice {
+      font-size: 14px;
+      margin-bottom: 10px;
+      max-width: 250px;
+    }
+  
+    .service_info_mobile .ourservices {
+      font-family: TheSeasons, serif;
+      font-size: 28px;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .timeline-vertical::before {
+        left: 4.5%; /* adjust line postiion */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .timeline-vertical::before {
+        left: 4.4%;
+    }
+  }
 
+  @media (max-width: 650px) {
+    .timeline-vertical::before {
+        left: 5%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .timeline-vertical::before {
+        left: 7%;
+    }
+  }
+
+
+    #service_container {
+        display: none;
+    }
+
+    #service_containermobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .service_process {
+        flex-direction: column;
+    }
+
+    .service_details {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
