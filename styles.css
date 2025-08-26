@@ -443,6 +443,10 @@ hr {
     align-items: flex-end; /* everything aligns to the right */
   }
   
+  .services_png {
+    display: none;
+  }
+
   /* ----------------- Service Type (Top Nav) ------------------- */
   
   .service_type {
@@ -587,6 +591,25 @@ hr {
     .service_info {
       display: none;
     }
+
+    .services_png {
+        display: flex;
+        overflow: auto;
+        position: relative;
+        align-self: center;
+    }
+
+    .services_png > img {
+        vertical-align: bottom;
+    }
+  }
+  /*
+  @media only screen and (max-width: 1100px) {
+    .service_type,
+    #service_container,
+    .service_info {
+      display: none;
+    }
   
     .service_typemobile {
       display: flex;
@@ -625,9 +648,9 @@ hr {
     .timeline-vertical::before {
         content: "";
         position: absolute;
-        top: 18%; /* adjust starting position */
+        top: 18%; /* adjust starting position 
         bottom: -100%;
-        left: 4%;      /* adjust line position */            
+        left: 4%;      /* adjust line position             
         transform: translateX(-50%); 
         grid-column: 2;             
         width: var(--rail);
@@ -639,7 +662,7 @@ hr {
       display: contents; 
     }
   
-    .step-vertical .process { /* development, production, post p*/
+    .step-vertical .process { /* development, production, post p
       grid-column: 1;
       justify-self: end;
       text-align: right;
@@ -659,7 +682,7 @@ hr {
       background: #344e54;
       border: var(--circle-border) solid #344e54;
       border-radius: 50%;
-      z-index: 2; /* above the line */
+      z-index: 2; /* above the line 
     }
   
     .step-vertical .details {
@@ -701,7 +724,7 @@ hr {
     }
 
     .timeline-vertical::before {
-        left: 4.5%; /* adjust line postiion */
+        left: 4.5%; /* adjust line postiion 
     }
 
     .service_typemobile {
@@ -736,9 +759,8 @@ hr {
 
   @media only screen and (max-width: 768px) {
     .timeline-vertical::before {
-        left: 4.5%; /* adjust line postiion */
+        left: 4.5%; /* adjust line postiion 
     }
-
   }
   
   @media only screen and (max-width: 700px) {
@@ -788,7 +810,7 @@ hr {
         left: 7%;
     }
   }
-
+*/
 
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
