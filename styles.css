@@ -312,7 +312,7 @@ hr {
     border-width: 1px;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 800px) {
     .press_header h1 {
         font-size: 40px;
     }
@@ -857,12 +857,27 @@ hr {
 }
 
 .contact_specific {
-    margin-left: 35px;
+    margin-left: 30px;
     margin-top: 0px;
+    text-align: left;
 }
 
 .contact_specific > a:link {
     color: #33596a;
+}
+
+@media only screen and (max-width: 800px) {
+    .contact_header {
+        font-size: 40px;
+    }
+
+    .contact_information {
+        font-size: 16px;
+    }
+
+    .contact_specific {
+        margin-left: 15px;
+    }
 }
 
 /* --------------- GENERAL PROJECT LAYOUT -----------------*/
