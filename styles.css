@@ -768,6 +768,7 @@ hr {
     .timeline-vertical::before {
         left: 6.5%;
     } 
+}
 
   @media (max-width: 500px) {
     .timeline-vertical::before {
