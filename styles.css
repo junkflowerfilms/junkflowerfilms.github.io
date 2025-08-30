@@ -815,12 +815,12 @@ hr {
 
 /* --------------- CONTACT US LAYOUT -----------------*/
 .contact_body {
-    background-color: #c1d9e67b;
+    background-color: #F7F7F7;
 }
 
 .contact_container {
     font-family: 'Glacial Indifference', sans-serif;
-    color: #5b879a;
+    color: #344e54;
     width: 100%;
     top: 50%;
     margin: 0;
