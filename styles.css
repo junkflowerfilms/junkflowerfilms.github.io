@@ -835,12 +835,12 @@ hr {
 }
 
 .contact_header {
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 15px;
 }
 
 .contact_motivation {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -848,7 +848,7 @@ hr {
 
 .contact_information {
     display: flex;
-    font-size: 19px;
+    font-size: 16px;
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -868,16 +868,21 @@ hr {
 
 @media only screen and (max-width: 800px) {
     .contact_header {
-        font-size: 40px;
+        font-size: 35px;
+    }
+
+    .contact_motivation {
+        font-size: 16px;
     }
 
     .contact_information {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .contact_specific {
         margin-left: 15px;
     }
+    
 }
 
 /* --------------- GENERAL PROJECT LAYOUT -----------------*/
