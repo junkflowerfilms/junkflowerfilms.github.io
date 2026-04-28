@@ -151,9 +151,7 @@ img {
 }
 
 /* DROPDOWN ON LEFTSIDEBAR */
-/* Fixed sidenav, full height */
 
-  
   /* Style the sidenav links and the dropdown button */
   .projectlinks a, .dropdown-btn {
     color: black;
@@ -164,6 +162,9 @@ img {
     outline: none;
     border: none;
     background: none;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
   }
   
   /* On mouse-over */
@@ -174,21 +175,22 @@ img {
   
   /* Add an active class to the active dropdown button */
   .active {
-    background-color: rgb(227, 227, 227);
+    background-color: #F7F7F7;
     color: #5b879a;
   }
   
   /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
   .dropdown-container {
     display: none;
-    padding-left: 8px;
+    background-color: rgb(225, 225, 225);
   }
   
   /* Optional: Style the caret down icon */
-  .fa-caret-down {
+  /* .fa-caret-down {
     float: left;
+    padding: 1px;
     color: #344e54;
-  }
+  } */
 
 
 /* .copyright_claim {
