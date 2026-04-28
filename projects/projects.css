@@ -1,0 +1,325 @@
+@import url('https://fonts.cdnfonts.com/css/glacial-indifference-2');
+@font-face {
+    font-family: TheSeasons;
+    src: url('fonts/Fontspring-theseasons-reg.otf');
+}
+
+@font-face {
+    font-family: TheSeasonsCursive;
+    src: url('fonts/Fontspring-cursive-theseasons-it.otf');
+}
+
+@font-face {
+    font-family: Gallient;
+    src: url('fonts/Gallient.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+}
+
+/* Hide mobile header by default */
+.mobile-header {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.maincontainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    border: none;
+    height: 100%;
+}
+
+#leftSidebar {
+    width: 21%;
+}
+
+#mainContent {
+    width: 67%;
+}
+
+#rightSidebar {
+    width: 12%;
+}
+
+.content {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+
+/* ------------------ MOBILE VIEW ------------------- */
+
+/* Apply styles only for screens smaller than 768px (iPhone-sized) */
+@media only screen and (max-width: 1100px) {
+    /* Show the mobile header */
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F7F7;
+        padding: 15px;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 110px;
+    }
+
+    /* Button styling */
+    .menu-button {
+        background-color: #F7F7F7;
+        border: none;
+        font-size: 34px;
+        cursor: pointer;
+        padding: 10px;
+        color: #5b879a;
+    }
+
+    /* Full-screen dropdown menu - Hidden by default */
+    .dropdown-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #F7F7F7;
+        z-index: 999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Show dropdown menu when active */
+    .dropdown-menu.show {
+        display: flex;
+    }
+
+    .dropdown-menu a {
+        font-size: 21px;
+        font-family: 'Glacial Indifference', sans-serif;
+        text-decoration: none;
+        color: black;
+        padding: 15px;
+        display: block;
+        width: 100%;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #5b879a;
+        color: white;
+    }
+
+    /* Hide sidebars in mobile view */
+    #leftSidebar, #rightSidebar {
+        display: none;
+    }
+
+    /* Push main content down */
+    #mainContent {
+        width: 100%;
+        height: calc(100vh - 115px);
+        position: absolute;
+        top: 115px; 
+        left: 0;
+    }
+
+    .project_information {
+        padding-top: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
+/* adding padding to bottom of screen if on a phone (since there is a bar across the bottom) */
+@media only screen and (max-width: 770px) {
+    #mainContent {
+        padding-bottom: 110px;
+    }
+
+    #mainContent > .contact_body{
+        padding-bottom: 10px;
+    }
+}
+
+
+/* --------------- GENERAL PROJECT LAYOUT -----------------*/
+/* link colors */
+
+.project_namedate > a:link {
+    color: #5b879a;
+}
+
+.project_namedate > a:visited {
+    color: #5b879a;
+}
+
+.project_namedate > a:hover {
+    color: #33596a;
+}
+
+.project_information {
+    color: #5b879a;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.project_namedate {
+    float: left;
+}
+
+.project_servicecast {
+    float: right;
+    text-align: right;
+}
+
+.cast_dropdown_wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.cast_list {
+    border: none;
+    color: #5b879a;
+    font-family: 'Glacial Indifference', sans-serif;
+    background-color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cast_list:hover {
+    color:#33596a;
+}
+
+.dropdown_paragraph {
+    display: none;
+    position: absolute;
+    right: 80%;
+    width: 100vw; 
+    background-color: #f9f9f9;
+    color: #000;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.cast_dropdown_wrapper:hover .dropdown_paragraph {
+    display: block;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .dropdown_paragraph {
+        right: -6%;
+        width: 50vw;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.verticalgroup {
+    flex: 50%;
+    padding: 2px;
+}
+
+/* ROMONTIO */
+
+.photo_images_container {
+    height: 100dvh;
+}
+
+.project_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100dvh;
+    max-height: 100dvh;
+    overflow-y: auto;
+    padding-bottom: 130px;
+}
+
+/* FUJIFILM */
+
+.fujifilm_container {
+    height: 100vh;
+}
+
+.fujifilm_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100dvh;
+    max-height: 100dvh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* TO DROWN A FLAME */
+
+.todrownaflame_container {
+    height: 100vh;
+}
+
+.todrownaflame_images {
+    flex-grow: 1;
+    background: #f7f7f7;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-bottom: 130px;
+}
+
+@media only screen and (max-width: 770px) {
+    .fujifilm_images {
+        padding-bottom: 110px;
+    }
+    
+    .project_images {
+        padding-bottom: 110px;
+    }
+
+    .todrownaflame_images {
+        padding-bottom: 110px;
+    }
+}
