@@ -22,9 +22,17 @@
             </div>
             <div class="projectlinks">
                 <!-- <a href="projects/kulfi.html" target="mainContent">KULFI BEAUTY</a> -->
+                <button class="dropdown-btn">KAJU STUDIOS
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-container">
+                    <a href="/projects/kaju-manjari.html" target="mainContent">MANJARI COLLECTION -</a>
+                    <br>
+                    <a href="projects/kaju-chandni.html" target="mainContent">CHANDNI COLLECTION -</a>
+                  </div>
                 <a href="projects/leany.html" target="mainContent">LEANYS</a>
                 <a href="projects/overstimulated.html" target="mainContent">RAWAN</a>
-                <a href="projects/kaju.html" target="mainContent">KAJU STUDIOS</a>
+                <!-- <a href="projects/kaju.html" target="mainContent">KAJU STUDIOS</a> -->
                 <a href="projects/raazitea.html" target="mainContent">RAAZI TEA</a>
                 <a href="projects/conversationsonsolidtude.html" target="mainContent">JASWIRY</a>
                 <a href="projects/romontio.html" target="mainContent">ROMONTIO</a>
@@ -40,6 +48,24 @@
             </div>
 			-->
         </div>
+
+        <script>
+            /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+            var dropdown = document.getElementsByClassName("dropdown-btn");
+            var i;
+            
+            for (i = 0; i < dropdown.length; i++) {
+              dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                } else {
+                  dropdownContent.style.display = "block";
+                }
+              });
+            }
+        </script>
 </body>
 
 </html>
